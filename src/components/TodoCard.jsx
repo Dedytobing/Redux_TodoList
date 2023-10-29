@@ -62,11 +62,14 @@ const TodoCard = ({ todo }) => {
               name="completed"
               checked={todo.completed}
               onChange={() => handleToggle(todo.id)}
-              className="h-5 w-5"
+              className="h-10 w-10"
             />
-            <p className={`text-lg ${todo.completed ? "line-through" : ""}`}>
+            <div className="w-full grid">
+            <p className={`text-base font-semibold ${todo.completed ? "line-through" : ""}`}>
               {todo.content || updatedContent}
             </p>
+            <p className="text-sm text-gray-500">{todo.date}</p>
+            </div>
           </div>
           <div className="space-x-3">
             <button

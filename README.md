@@ -1,8 +1,25 @@
-# React + Vite
+# React Redux Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple todo list app built with React and Redux. This app allows you to manage your tasks and keep track of your to-do items.
 
-Currently, two official plugins are available:
+## Demo
+- [Live Demo](https://todolist-dedy.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Add new tasks to your to-do list.
+- Mark tasks as completed.
+- Update task content.
+- Delete tasks from your list.
+- View the date and time when each task was created.
+
+## Getting Started
+
+To run this app locally:
+
+1. Clone the repository: `git clone https://github.com/Dedytobing/Redux_TodoList.git`
+2. Navigate to the project directory: `cd Redux_TodoList`
+3. Install the dependencies: `npm install`
+4. Start the app: `npm start`
+
+The app will run at [http://localhost:3000](http://localhost:3000).

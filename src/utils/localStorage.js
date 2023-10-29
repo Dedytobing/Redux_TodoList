@@ -1,6 +1,15 @@
 export function saveToLocalStorage(state) {
   try {
-    const serialisedState = JSON.stringify(state);
+    // Dapatkan data dari local storage
+    const existingData = loadFromLocalStorage();
+    const newState = { ...state };
+
+    if (existingData) {
+      // Salin ID terakhir yang digunakan
+      newState.lastUsedId = existingData.lastUsedId;
+    }
+
+    const serialisedState = JSON.stringify(newState);
     localStorage.setItem("reduxState", serialisedState);
   } catch (e) {
     console.warn(e);

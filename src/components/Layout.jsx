@@ -14,7 +14,7 @@ const Layout = () => {
 
   function activeClass(path) {
     const location = useLocation();
-    return location.pathname === path ? "bg-blue-500" : "";
+    return location.pathname === path ? "bg-cyan-600" : "";
   }
 
   const handleSetUserInput = (userInput) => {
@@ -37,28 +37,28 @@ const Layout = () => {
           />
           <input
             type="submit"
-            className="p-3 btn bg-blue-500 hover:bg-blue-400 text-white"
+            className="p-3 btn bg-cyan-600 hover:bg-cyan-500 text-white"
             value="Add"
           />
         </form>
         <nav>
           <ul className="flex gap-2 p-2 font-normal text-lg my-3 text-white">
             <li
-              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-blue-500 ${activeClass(
+              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-cyan-500 ${activeClass(
                 "/"
               )}`}
             >
               <NavLink to={"/"}>All</NavLink>
             </li>
             <li
-              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-blue-500 ${activeClass(
+              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-cyan-500 ${activeClass(
                 "/active"
               )}`}
             >
               <NavLink to={"/active"}>Active</NavLink>
             </li>
             <li
-              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-blue-500 ${activeClass(
+              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-cyan-500 ${activeClass(
                 "/completed"
               )}`}
             >
