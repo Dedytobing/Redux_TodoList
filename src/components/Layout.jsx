@@ -14,7 +14,7 @@ const Layout = () => {
 
   function activeClass(path) {
     const location = useLocation();
-    return location.pathname === path ? "bg-cyan-600" : "";
+    return location.pathname === path ? "bg-cyan-600" : "bg-slate-400";
   }
 
   const handleSetUserInput = (userInput) => {
@@ -44,23 +44,17 @@ const Layout = () => {
         <nav>
           <ul className="flex gap-2 p-2 font-normal text-lg my-3 text-white">
             <li
-              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-cyan-500 ${activeClass(
-                "/"
-              )}`}
+              className={`rounded-full px-5 py-1 hover:bg-cyan-500 ${activeClass("/")}`}
             >
               <NavLink to={"/"}>All</NavLink>
             </li>
             <li
-              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-cyan-500 ${activeClass(
-                "/active"
-              )}`}
+              className={`rounded-full px-5 py-1 hover-bg-cyan-500 ${activeClass("/active")}`}
             >
               <NavLink to={"/active"}>Active</NavLink>
             </li>
             <li
-              className={`rounded-full bg-slate-400 px-5 py-1 hover:bg-cyan-500 ${activeClass(
-                "/completed"
-              )}`}
+              className={`rounded-full px-5 py-1 hover-bg-cyan-500 ${activeClass("/completed")}`}
             >
               <NavLink to={"/completed"}>Completed</NavLink>
             </li>
